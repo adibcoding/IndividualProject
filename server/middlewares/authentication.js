@@ -18,7 +18,8 @@ async function Authentication(req, res, next){
 
         req.extra = {
             userId : user.id,
-            email: user.email
+            email: user.email,
+            role: user.role //fixing migration first
         }
 
         next()

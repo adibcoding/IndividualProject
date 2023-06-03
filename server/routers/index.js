@@ -10,10 +10,12 @@ const router = express.Router()
 // define the about route
 router.post('/login', UserController.login)
 router.post('/register', UserController.register)
-
+router.get('/geocode', MassageController.geocode)
 router.post('/gsign', UserController.gsign)
 
-router.get('/massages', MassageController.allMassages)
+router.post('/massages', MassageController.allMassages)
+
+
 
 
 
