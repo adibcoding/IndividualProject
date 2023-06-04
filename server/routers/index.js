@@ -13,7 +13,9 @@ router.post('/register', UserController.register)
 router.get('/geocode', MassageController.geocode)
 router.post('/gsign', UserController.gsign)
 
-router.post('/massages', MassageController.allMassages)
+router.get('/massages', MassageController.allMassages)
+router.get('/massages/:massageId', MassageController.detailMassage)
+
 
 
 

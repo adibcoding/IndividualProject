@@ -20,12 +20,12 @@ class UserController{
 
             const token = generateToken({
                 id: user.id,
-                username: user.username,
                 email: user.email
             })
 
             res.status(200).json({
-                access_token: token
+                access_token: token,
+                id: user.id
             })
 
         } catch (err) {
@@ -35,15 +35,15 @@ class UserController{
 
     static async register(req, res, next){
         try {
-            const {username, email, password} = req.body
-            if(!username || !email || !password) throw {name: "InvalidInput"}
+            const {email, password} = req.body
+            if(!email || !password) throw {name: "InvalidInput"}
             const hashedPass = getHash(password)
 
-            const user = await User.create({username, email, password: hashedPass})
+            const user = await User.create({email, password: hashedPass})
 
             res.status(201).json({
-                username: username,
-                email: email
+                id: user.id,
+                email: user.email
             })
             
             

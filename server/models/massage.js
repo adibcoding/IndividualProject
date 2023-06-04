@@ -19,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
   Massage.init({
     title: DataTypes.STRING,
     duration: DataTypes.INTEGER,
-    price: DataTypes.INTEGER
+    price: DataTypes.INTEGER,
+    imgUrl: DataTypes.STRING,
+    description: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Massage',

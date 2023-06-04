@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Full Body Massage",
+        "duration": 120,
+        "price": 200000,
+        "description": "The best massage provided to you, applied all over your body to give the best healing to the whole body",
+        "imgUrl": "https://www.themanual.com/wp-content/uploads/sites/9/2019/09/guide-to-bodywork-massage-04513-e1683502087659.jpg?fit=800%2C533&p=1"
+    },
+    {
+        "title": "Foot Massage",
+        "duration": 60,
+        "price": 90000,
+        "description": "Your feet will be massaged to the perfection, miracle brought to you starting from the feet",
+        "imgUrl": "https://media.gettyimages.com/id/1367037500/video/4k-video-footage-of-an-unrecognisable-woman-enjoying-a-foot-massage-at-a-spa.jpg?s=640x640&k=20&c=c25bSDqJiqW-wwIb2CgmHUskhLwoH9OQaAFbDLzTW0Y="
+    },
+    {
+        "title": "Back Massage",
+        "duration": 90,
+        "price": 120000,
+        "description": "All back problems will be gone the moment you try this particular massage",
+        "imgUrl": "https://media.gettyimages.com/id/1367037500/video/4k-video-footage-of-an-unrecognisable-woman-enjoying-a-foot-massage-at-a-spa.jpg?s=640x640&k=20&c=c25bSDqJiqW-wwIb2CgmHUskhLwoH9OQaAFbDLzTW0Y="
+    },
+    {
+        "title": "Back Massage",
+        "duration": 120,
+        "price": 200000,
+        "description": "All back problems will be gone the moment you try this particular massage",
+        "imgUrl": "https://media.gettyimages.com/id/1367037500/video/4k-video-footage-of-an-unrecognisable-woman-enjoying-a-foot-massage-at-a-spa.jpg?s=640x640&k=20&c=c25bSDqJiqW-wwIb2CgmHUskhLwoH9OQaAFbDLzTW0Y="
+    },
+    {
+        "title": "Back Massage",
+        "duration": 60,
+        "price": 100000,
+        "description": "All back problems will be gone the moment you try this particular massage",
+        "imgUrl": "https://media.gettyimages.com/id/1367037500/video/4k-video-footage-of-an-unrecognisable-woman-enjoying-a-foot-massage-at-a-spa.jpg?s=640x640&k=20&c=c25bSDqJiqW-wwIb2CgmHUskhLwoH9OQaAFbDLzTW0Y="
+    }
+]

@@ -5,24 +5,33 @@ class MassageController{
     static async allMassages (req, res, next){
         try {
             const massages = await Massage.findAll()
-            
+        
+            // const { location } = req.body
+            // console.log(location)
             // const {data} = await axios({
-            //     url: 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBKvc3oQF8Ef0yLOGXbL9-hHyvLc-LVfyc',
+            //     url: `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyBKvc3oQF8Ef0yLOGXbL9-hHyvLc-LVfyc`,
             //     method: 'GET'
             // })
 
-            const { location } = req.body
-            console.log(location)
-            const {data} = await axios({
-                url: `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyBKvc3oQF8Ef0yLOGXbL9-hHyvLc-LVfyc`,
-                method: 'GET'
-            })
-
-            console.log(data.results[0].geometry)
+            // console.log(data.results[0].geometry)
 
             res.status(200).json({
-                massages,
-                data
+                massages
+            })
+            
+            
+        } catch (err) {
+            next(err)
+        }
+    }
+
+    static async detailMassage (req, res, next){
+        try {
+            const {massageId} = req.params
+            const massage = await Massage.findByPk(massageId)
+        
+            res.status(200).json({
+                massage
             })
             
             
@@ -40,7 +49,7 @@ class MassageController{
                 method: 'GET'
             })
             console.log(data)
-
+            console.log(data.results[0].geometry)
 
             res.status(200).json({
                 data

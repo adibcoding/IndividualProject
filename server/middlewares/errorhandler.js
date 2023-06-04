@@ -24,6 +24,12 @@ const errorHandler = (err, req, res, next) => {
                 message: "Invalid Token"
             })
             break
+        case "NotFound":
+            statusCode = 404
+            res.status(statusCode).json({
+                message: "Not Found"
+            })
+            break
         default:
             res.status(statusCode).json({
                 message: "Internal Server Error"
